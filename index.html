@@ -474,7 +474,43 @@
         </script>
       </div>
 
+      <div class="contact-card1">
+        <div class="contact-details">
+          <div class="contact-image-container">
+            <img class="contact-image2" src="one.jpg" alt="Profile Image" />
+          </div>
+          <div>
+            <div class="name">
+                Mr. K.G.P. Amaradasa   <br />
+              <span class="disgnation">Officer In Charge Area
+                (Huruluwewa) </span><br />
+              <p>
+                In.com : <span id="">None</span><br />
+                LandLine : <span id="of_land">081-3154655 </span><br />
+                Mobile : <span id="of_mobile">071-4456778
 
+
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-buttons">
+            <button class="call-button" onclick="callNumber('of_land')">
+                Call LandLine
+              </button>
+              <button class="call-button" onclick="callNumber('of_mobile')">
+                Call Mobile
+              </button>
+        </div>
+        <script>
+          function callNumber(number, isMobile = false) {
+            var prefix = isMobile ? "tel:" : "tel:";
+            window.location.href =
+              prefix + document.getElementById(number).textContent;
+          }
+        </script>
+      </div>
     
 
 
